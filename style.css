@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+}
+.nav{
+    width: 100%;
+    height: 63px;
+    background-color: rgb(36, 36, 226);
+}
+#nav-bar{
+    width: 100%;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 2px; margin-bottom: 10px;
+    display: none;
+}
+
+
+/*SEARCH text Start*/
+.s1 p{
+        font-family: sans-serif;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: x-large;
+        text-align: center;
+        color: rgb(236, 72, 22);
+        text-shadow: 1px -0px 2px #e9707088;
+    }
+/*SEARCH text end*/
+@media (max-width:768px){
+    /*----Emty--*/
+}
+/*[<!--[body (Cod by subeesh) START]-->]*/
+.s1{
+    padding:5px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#searchbar{
+    background-color: #30364e79;
+	padding:5px;
+	border-radius: 10px;
+}
+
+input[type=text] {
+	width: 55%;
+	-webkit-transition: width 0.15s ease-in-out;
+	transition: width 0.15s ease-in-out;
+}
+
+/* When the input field gets focus,
+		change its width to 100% */
+input[type=text]:focus {
+	width: 70%;
+}
+
+.Dark{
+display: block;
+}
+
+.s1 .clear{
+    margin-left:-25px;
+    color:#25212159;
+    cursor: pointer;
+}
+
+.search_hint li{
+    background-color: #3546e259;
+    box-shadow: 1px -0px 5px #000000;
+    padding: 15px;
+    border-radius: 7px;
+    margin-top: -17px;
+    border: #fff7f7 1px solid;
+}
+
+.search_hint li a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #000000;
+}
+.search_hint img{
+    border-radius: 7px;
+    width: 100%;
+}
+
+.scr1 li{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.not-for-found{
+    background-image: url(ee.png);
+    height: 20px;
+    margin-top: 30px;
+    margin-bottom: -40px;
+    margin-left: 148px;
+    margin-right: 135px;
+}
+.copy-right{
+    box-shadow: 1px -0px 1px #fc3b3bf8;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: #000000da;
+    margin-top: 45px;
+    font: 1em sans-serif;
+    color: #ffffff;
+}
+/*[<!--[body (Cod by subeesh) END]-->]*/
+
+.nav1{
+    border-top-left-radius:7px;
+    border-top-right-radius:7px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 55px;
+    box-shadow: 0 0 3px rgb(0,0,0,0.2);
+    background-color: rgb(36, 36, 226);
+    display: flex;
+    overflow-x: auto;
+}
+.nav__link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background 0.1 ease-in-out;
+}
+
+.nav__link:hover {
+    background-color: #eeeeee18;
+}
+
+.nav__icon{
+    font-size:24px;
+}

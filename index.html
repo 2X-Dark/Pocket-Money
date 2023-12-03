@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+    <title>Pocket Mooney</title>
+</head>
+<body>
+    <div class="nav">
+        <img onclick="showOrHide()"id="Image1" style=" height: 55px; width: 55px; margin-top: 4px; float: right;" src="icon.png">
+        <Nickname style="color: rgb(255, 255, 255); line-height: 63px;  margin-left: 15px; font-size: 30px; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">Pocket Mooney</Nickname>
+    </div>
+    <div id="nav-bar">
+        <p style="padding: 5px; font-family:sans-serif; font-weight: bold;">Home</p>
+        <hr>
+        <p style="padding: 5px; font-family:sans-serif; font-weight: bold;">Contact</p>
+        <hr>
+        <p style="padding: 5px; font-family:sans-serif; font-weight: bold;">Social Media</p>
+        <hr>
+        <p style="padding: 5px; font-family:sans-serif; font-weight: bold;">Help</p>
+        <hr>
+    </div>
+    <nav class="nav1">
+        <a href="#" class="nav__link">
+            <i class="material-icons nav__icon">home</i>
+            <span class="nav__text">Home</span>
+        </a>
+        <a href="#" class="nav__link">
+            <i class="material-icons nav__icon">video_library</i>
+            <span class="nav__text">Videos</span>
+        </a>
+        <a href="#" class="nav__link">
+            <i class="material-icons nav__icon">calendar_month</i>
+            <span class="nav__text">Today's</span>
+        </a>
+        <a href="#" class="nav__link">
+            <i class="material-icons nav__icon">local_atm</i>
+            <span class="nav__text">Proof</span>
+        </a>
+    </nav>
+    <div class="scr1">
+        <!-- input tag -->
+           <div class="s1">
+               <p><b>Search</b></p>
+            <input style="color: #3d3a3a;" id="searchbar" onkeyup="search()" type="text"
+             name="search" placeholder="Search..">
+             <i class="clear fa fa-times"></i>
+           </div>
+           <!-- ordered list -->
+           <ol id='list'>
+               <div class="search_hint">
+                   <div class="not-for-found"></div>
+                    <!-- Add list [START]-->
+                   <li style="margin-bottom: 30px;" class="Dark"><a href="/DB/website.jpg"><img src="/DB/website.jpg" alt="website"><b>website</b></a></li>
+                   <li style="margin-bottom: 30px;" class="Dark"><a href="/DB/Hacker.jpg"><img src="/DB/Hacker.jpg" alt="Hacker"><b>Hacker</b></a></li>
+                   <li style="margin-bottom: -40px;" class="Dark"><a href="/DB/top.gif"><img src="/DB/top.gif" alt="Gif"><b>Gif</b></a></li>
+                   <br><br><br><br><br><br>
+                   <!-- Add list [START]-->
+               </div>
+           </ol>
+           <!-- linking javascript -->
+</body>
+<script src="nav-script.js"></script>
+<script src="search.js"></script>
+<script>
+    let clear= document.querySelector(".clear");
+    clear.onclick = function(){
+    document.getElementById("searchbar").value ="";
+}
+ </script>
+</html>
